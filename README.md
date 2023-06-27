@@ -1,5 +1,8 @@
 # java-8-features
-### Lambda Expression : 
+### Lambda Expression :
+- Anonymous function (don't have any name and return type)
+- applicable for functional interface.
+- functional interface-> contains only one abstract method but can have multiple default and static method ex., Runnable=> run(), Callable=>call()
 - with lambda expression we don't have to need method name and return type
 - also you don't need to implement interface if there is only one method
 - if there is only one statement then no need to bracket also
