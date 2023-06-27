@@ -71,4 +71,33 @@ public class PredicateDemo{
 
 - can be used in all contexts where there is no input but a output is expected
 - T get();
+- It contain only one abstract method so, no need to implement we can use lambda expression
+- Example :
+```
+public class SupplierDemo{
+
+	/*
+	@Override
+	public String get() {
+		return "Kajol";
+	}	
+	 */
+	
+	public static void main(String[] args) {
+		/*
+		Supplier<String> name = new SupplierDemo();
+		System.out.println(name.get());
+		*/
+		
+		/*
+		Supplier<String> name = ()-> "Kajol";
+		System.out.println(name.get());
+		*/
+		
+		//orElseGet() will accept supplier object
+		List<String> list = Arrays.asList("Ram", "Prabhakar");
+		System.out.println(list.stream().findAny().orElseGet(()-> "Kajol"));
+	}
+}
+```
 
